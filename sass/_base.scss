@@ -1,0 +1,46 @@
+:root {
+  --color-primary-strong-cyan: hsl(171, 66%, 44%);
+  --color-primary-light-blue: hsl(233, 100%, 69%);
+
+  --color-secondary-dark-drayish-blue: hsl(210, 10%, 33%);
+  --color-secondary-grayish-blue: hsl(201, 11%, 66%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 144rem;
+
+  @media (max-width: 950px) {
+    width: 375px;
+  }
+}
+
+::selection {
+  background-color: var(--color-primary-strong-cyan);
+  color: white;
+}
